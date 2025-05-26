@@ -1,0 +1,35 @@
+{
+  "monitoring": {
+    "interval": 15000,
+    "minProfitThreshold": 10.0,
+    "maxCombinations": 10
+  },
+  "gpuService": {
+    "url": "http://localhost:5000/calcular",
+    "timeout": 5000
+  },
+  "exchanges": {
+    "binance": {
+      "apiKey": "",
+      "apiSecret": "",
+      "baseUrl": "https://api.binance.com"
+    },
+    "uniswap": {
+      "providerUrl": "https://mainnet.infura.io/v3/YOUR_INFURA_KEY",
+      "routerAddress": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
+    }
+  },
+  "tokens": [
+    {"symbol": "ETH", "name": "Ethereum", "decimal": 18},
+    {"symbol": "USDT", "name": "Tether", "decimal": 6},
+    {"symbol": "DAI", "name": "Dai", "decimal": 18},
+    {"symbol": "BTC", "name": "Bitcoin", "decimal": 8},
+    {"symbol": "WETH", "name": "Wrapped Ethereum", "decimal": 18}
+  ],
+  "pairs": [
+    ["ETH", "USDT"],
+    ["ETH", "DAI"],
+    ["BTC", "USDT"],
+    ["BTC", "ETH"]
+  ]
+}

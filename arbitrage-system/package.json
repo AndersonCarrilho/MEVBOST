@@ -1,0 +1,19 @@
+{
+  "name": "arbitrage-monitor",
+  "version": "1.0.0",
+  "description": "Sistema de monitoramento e execução de arbitragem",
+  "main": "src/monitor.js",
+  "scripts": {
+    "start": "node src/monitor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bignumber.js": "^9.0.2",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.5.2",
+    "ws": "^8.3.0",
+    "winston": "^3.5.0",
+    "node-cache": "^5.1.2"
+  }
+}
